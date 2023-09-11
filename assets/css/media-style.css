@@ -1,0 +1,360 @@
+@media screen and (max-width: 1470px) {
+  /* Hot Section */
+  .hot_products_location {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_hot_card {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .main_hot_card .main_hot_img {
+    width: 50%;
+  }
+  /* Footer */
+  .footer_forms-content,
+  .sub_content,
+  .copyright,
+  .footer_menu {
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+  }
+  .sub_content {
+    max-width: 360px;
+  }
+  .sblog_product .scontact_forms .contact_inputs {
+    flex-direction: column;
+  }
+  .name,
+  .name input,
+  .email,
+  .email input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .news_section .news_cards,
+  .sale_banners,
+  .brand_images,
+  .instagram_imgs {
+    justify-content: center !important;
+    gap: 40px;
+  }
+  .client_reviews {
+    width: 165%;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+
+  /* Features */
+  .features {
+    justify-content: start;
+    gap: 40px;
+    width: 100%;
+  }
+
+  /* About Page */
+  .about_us_section .about_content {
+    flex-wrap: wrap;
+  }
+
+  /* Contact */
+  .contact_content {
+    flex-direction: column;
+  }
+  .contact_content .left_side {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_content .location,
+  .contact_content .e-mail {
+    border-bottom: none;
+  }
+  .right_side,
+  .right_side .contact_inputs input {
+    width: 100%;
+  }
+  .right_side .contact_inputs {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* Header */
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: var(--bg-color);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 40px;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+  #navbar.active {
+    left: 0;
+  }
+  .mobile {
+    cursor: pointer;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    color: #222;
+    font-size: 24px;
+  }
+  #bar {
+    display: block;
+  }
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .site_header {
+    justify-content: center;
+    gap: 20px;
+  }
+  .search_form input {
+    width: 100% !important;
+  }
+
+  /* Home Section */
+  .banner_section {
+    flex-wrap: wrap;
+  }
+  .main_banner {
+    width: 100%;
+    height: 100%;
+  }
+  .small_banners {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .small_banner:nth-child(2) .sm_banner_desc {
+    left: 32px;
+    top: 32px;
+    text-align: start;
+  }
+
+  /* Popular Products */
+  .po_card {
+    width: auto;
+    flex-wrap: wrap;
+  }
+  .hot_product_section {
+    padding: 60px 0;
+  }
+
+  /* instagram */
+  .brand_images img {
+    padding-right: 0;
+    border-right: none;
+  }
+  .client_desc .client_img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  /* Sales Banner */
+  .sale_banner_section .sale_banner {
+    max-width: 100%;
+  }
+  /* Subscribe Banner */
+  .subscribe_banner {
+    justify-content: center;
+    width: 90%;
+    height: 35%;
+    padding: 10px 0 40px;
+  }
+  .about_features .ab-fe {
+    flex-direction: column;
+    align-items: start;
+  }
+  .image,
+  .sub_input input,
+  .dont_show,
+  .client_desc .stars {
+    display: none;
+  }
+  .footer_forms-content .sub_input input {
+    display: block;
+  }
+  .sub_input .normal {
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+  }
+  .sub_content .paragraph {
+    font-size: 10px !important;
+  }
+  .review {
+    padding: 15px;
+  }
+  .review p {
+    margin: 16px 0 0;
+  }
+  .about_us_section .about_content .paragraph {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* Blog Section */
+  .blog_sections .merge_sections,
+  .blog_sections .sblog_merge_sections {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  #sblog-section {
+    width: 100%;
+    padding-left: 0;
+  }
+  .filter_section,
+  .sfilter_section {
+    position: absolute;
+    max-width: 240px;
+    width: 100%;
+    height: max-content;
+    background: #333;
+    top: -32px;
+    left: -100%;
+    padding: 10px 10px 0 10px;
+    z-index: 10;
+    transition: all 0.5s ease;
+    color: white;
+  }
+  .filter_section.open,
+  .sfilter_section.open {
+    left: 0;
+  }
+  .filter_staff .search_form {
+    width: 95%;
+  }
+  .top_categories .categories li a,
+  .filter_section .search_form .src_input {
+    color: white;
+  }
+  .close_btn,
+  .close_btn2,
+  .for_filter_mobile,
+  .for_filter_smobile {
+    display: block;
+  }
+  .blog_section .sort_func select {
+    width: 76px;
+  }
+  .p_tags button.normal {
+    padding: 0 20px;
+  }
+  .added .added-title h3 {
+    font-size: 12px;
+  }
+  .play_btn {
+    display: none;
+  }
+  .news_card .details p i {
+    margin-right: 2px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  /* Home Section */
+  .banner_desc,
+  .sm_banner_desc,
+  .sblog_banner .square {
+    display: none;
+  }
+  .banner_title {
+    font-size: 28px;
+  }
+  button.normal {
+    padding: 16px 20px;
+  }
+  /* Hot Section */
+  .main_hot_card {
+    min-height: 554px;
+    justify-content: center;
+  }
+  /* About Page */
+  .about_features {
+    gap: 5px;
+  }
+  .about_us_section .about_content .desc_content {
+    max-width: 590px;
+    width: 85%;
+  }
+  .about_features {
+    max-width: 360px;
+    width: 100%;
+  }
+  .about_features .ab-fe h5 {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Header */
+  .registration {
+    justify-content: center;
+    gap: 20px;
+  }
+  .po_card {
+    width: 46%;
+  }
+  /* banner */
+  .disc_description {
+    left: 30px;
+  }
+  .disc_content .paragraph {
+    color: white;
+  }
+  .product_section .popular_cards .po_card {
+    width: 85%;
+  }
+  .sub_input {
+    width: 300px;
+  }
+  .about_features .ab-fe img {
+    width: 40px;
+    height: 40px;
+  }
+  .contact_forms {
+    padding: 44px 10px 50px;
+  }
+  button.normal2 {
+    right: -43px;
+  }
+  .sub_input .sub_email {
+    width: 280px;
+  }
+  button.normal2 {
+    right: -8px;
+  }
+  .pag_btn i,
+  .pagination a {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .pagination {
+    gap: 7px;
+  }
+}
