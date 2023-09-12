@@ -807,15 +807,15 @@ button.normal2:hover {
 }
 
 .sale_banner_section .sale_banner:nth-child(1) {
-  background-image: url("/assets/images/Sales/R1.png");
+  background-image: url("images/Sales/R1.png");
 }
 
 .sale_banner_section .sale_banner:nth-child(2) {
-  background-image: url("/assets/images/Sales/R2.png");
+  background-image: url("images/Sales/R2.png");
 }
 
 .sale_banner_section .sale_banner:nth-child(3) {
-  background-image: url("/assets/images/Sales/R3.png");
+  background-image: url("images/Sales/R3.png");
 }
 
 .countdown {
@@ -1032,7 +1032,7 @@ button.normal2:hover {
 
 .disc_content {
   position: relative;
-  background-image: url("/assets/images/DiscountBannar.png");
+  background-image: url("images/DiscountBannar.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1395,7 +1395,7 @@ button.normal2:hover {
 /* /// About Page /// */
 
 .about_bg {
-  background-image: url("/assets/images/aboutPage/aboutbg.png");
+  background-image: url("images/aboutPage/aboutbg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2024,7 +2024,7 @@ button.normal2:hover {
 }
 
 .sblog_banner {
-  background-image: url("/assets/images/Sblog/bg.png");
+  background-image: url("images/Sblog/bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
