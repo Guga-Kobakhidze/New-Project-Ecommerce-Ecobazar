@@ -117,10 +117,10 @@
       <section class="blog_sections" id="sblog-section">
         <div class="container">
           <div class="sblog_merge_sections">
-            <!-- blog -->
+            <!-- Single blog -->
             <section class="blog_section">
               <div class="sblog_product">
-                <img src="assets/images/Sblog/main.png" alt="main" />
+                <img src="" width="100%" id="MainImg" alt="" />
                 <div class="details">
                   <p class="paragraph">
                     <i class="ri-price-tag-3-line"></i><span>Food</span>
@@ -132,15 +132,12 @@
                     <i class="ri-chat-2-line"></i><span>65 Comments</span>
                   </p>
                 </div>
-                <h2 class="title">
-                  Maecenas tempor urna sed quam mollis, a placerat dui fringill
-                  Suspendisse.
-                </h2>
+                <h2 class="title" id="productTitle"></h2>
                 <div class="product_by">
                   <div class="product_admin">
-                    <img src="assets/images/Sblog/Images.png"" alt="">
+                    <img id="userImg" src="" alt="" />
                     <div class="pro_admin_bio">
-                      <h5>Cameron Williamson</h5>
+                      <h5 id="userName"></h5>
                       <p class="paragraph">4 April, 2021 • 6 min read</p>
                     </div>
                   </div>
@@ -153,11 +150,7 @@
                   </div>
                 </div>
                 <div class="sblog_description">
-                  <h4>
-                    Maecenas lacinia felis nec placerat sollicitudin. Quisque
-                    placerat dolor at scelerisque imperdiet. Phasellus tristique
-                    felis dolor.
-                  </h4>
+                  <h4 id="productSubtitle"></h4>
                   <br />
                   <p class="paragraph">
                     Maecenas elementum in risus sed condimentum. Duis convallis
@@ -178,8 +171,8 @@
                   </p>
                   <br />
                   <div class="desc_images">
-                    <img src="assets/images/Sblog/bio1.png" alt="" />
-                    <img src="assets/images/Sblog/bio2.png" alt="" />
+                    <img class="bio-img" src="" alt="" />
+                    <img class="bio-img" src="" alt="" />
                   </div>
                   <br />
                   <p class="paragraph">
@@ -232,13 +225,6 @@
                       placeholder="Write Your Comment Here..."
                     ></textarea>
                   </div>
-                  <button
-                    type="submit"
-                    style="position: relative"
-                    class="normal2"
-                  >
-                    Send Message
-                  </button>
                   <div class="save_checkbox">
                     <input type="checkbox" />
                     <p class="paragraph">
@@ -246,7 +232,75 @@
                       comment.
                     </p>
                   </div>
+                  <button
+                    type="submit"
+                    style="position: relative"
+                    class="normal2"
+                  >
+                    Post Comments
+                  </button>
                 </form>
+                <div class="user_comment_content">
+                  <h2 class="title">Comments</h2>
+                  <div class="user_comment">
+                    <img src="assets/images/Sblog/User1.png" alt="" />
+                    <div class="comment">
+                      <h4>Annette Black • <span>26 Apr, 2021</span></h4>
+                      <p class="paragraph">
+                        In a nisi commodo, porttitor ligula consequat, tincidunt
+                        dui. Nulla volutpat, metus eu aliquam malesuada, elit
+                        libero venenatis urna, consequat maximus arcu diam non
+                        diam.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="user_comment">
+                    <img src="assets/images/Sblog/User2.png" alt="" />
+                    <div class="comment">
+                      <h4>Devon Lane • <span>24 Apr, 2021</span></h4>
+                      <p class="paragraph">
+                        Quisque eget tortor lobortis, facilisis metus eu,
+                        elementum est. Nunc sit amet erat quis ex convallis
+                        suscipit. Nam hendrerit, velit ut aliquam euismod, nibh
+                        tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed
+                        scelerisque, est eget aliquam venenatis, est sem tempor
+                        eros.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="user_comment">
+                    <img src="assets/images/Sblog/User3.png" alt="" />
+                    <div class="comment">
+                      <h4>Jacob Jones • <span>20 Apr, 2021</span></h4>
+                      <p class="paragraph">
+                        Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia curae.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="user_comment">
+                    <img src="assets/images/Sblog/User4.png" alt="" />
+                    <div class="comment">
+                      <h4>Jane Cooper • <span>18 Apr, 2021</span></h4>
+                      <p class="paragraph">
+                        Pellentesque feugiat, nibh vel vehicula pretium, nibh
+                        nibh bibendum elit, a volutpat arcu dui nec orci. Aenean
+                        dui odio, ullamcorper quis turpis ac, volutpat imperdiet
+                        ex.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="user_comment">
+                    <img src="assets/images/Sblog/User5.png" alt="" />
+                    <div class="comment">
+                      <h4>Darrell Steward • <span>7 Apr, 2021</span></h4>
+                      <p class="paragraph">
+                        Nulla molestie interdum ultricies.
+                      </p>
+                    </div>
+                  </div>
+                  <button class="normal">Load More</button>
+                </div>
               </div>
             </section>
 
@@ -485,6 +539,7 @@
     </footer>
 
     <!-- JavaScript Codes -->
+    <script src="assets/js/sblog-scriipt.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
