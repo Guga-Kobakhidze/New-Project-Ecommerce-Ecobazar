@@ -1,3 +1,33 @@
+// For BurgerMenu --> //
+
+const bar = document.getElementById("bar");
+const close = document.getElementById("close");
+const nav = document.getElementById("navbar");
+
+if (bar) {
+  bar.addEventListener("click", () => {
+    nav.classList.add("active");
+  });
+}
+
+if (close) {
+  close.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+}
+
+// For Active menu --> //
+
+const currentLocation = window.location.href;
+
+const navbarLinks = document.querySelectorAll(".navigation li a");
+
+navbarLinks.forEach((link) => {
+  if (link.href === currentLocation) {
+    link.classList.add("active");
+  }
+});
+
 // For slider -->> //
 
 $(document).ready(function () {
@@ -31,39 +61,11 @@ $(document).ready(function () {
   // const autoplayInterval = setInterval(nextSlide, 5000);
 });
 
-// For BurgerMenu --> //
 
-const bar = document.getElementById("bar");
-const close = document.getElementById("close");
-const nav = document.getElementById("navbar");
-
-if (bar) {
-  bar.addEventListener("click", () => {
-    nav.classList.add("active");
-  });
-}
-
-if (close) {
-  close.addEventListener("click", () => {
-    nav.classList.remove("active");
-  });
-}
-
-// For Active menu --> //
-
-const currentLocation = window.location.href;
-
-const navbarLinks = document.querySelectorAll(".navigation li a");
-
-navbarLinks.forEach((link) => {
-  if (link.href === currentLocation) {
-    link.classList.add("active");
-  }
-});
 
 // For Timer -->> //
 
-const targetDate = new Date("2023-09-17T00:02:18").getTime();
+const targetDate = new Date("2023-09-20T00:02:18").getTime();
 
 function updateCountdown() {
   const currentDate = new Date().getTime();

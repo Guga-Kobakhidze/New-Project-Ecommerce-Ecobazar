@@ -208,7 +208,7 @@
   .subscribe_banner {
     justify-content: center;
     width: 90%;
-    height: 35%;
+    height: 60%;
     padding: 10px 0 40px;
   }
   .about_features .ab-fe {
@@ -242,6 +242,14 @@
   .about_us_section .about_content .paragraph,
   .desc_section .paragraph,
   .desc_section .social_icons .icons h4 {
+    font-size: 10px;
+  }
+  .footer_forms-content .sub_content {
+    max-width: 330px;
+  }
+  .S-products .added-staff .added .added-title h4,
+  .S-products .added-staff .added .added-title h3,
+  .S-products .added-staff .added .added-title .stars i {
     font-size: 10px;
   }
 }
@@ -310,9 +318,6 @@
   }
   .news_card .details p i {
     margin-right: 2px;
-  }
-  .range_inputs input:last-child {
-    top: 0;
   }
 }
 
@@ -396,7 +401,7 @@
     font-size: 12px;
   }
   .pagination {
-    gap: 7px;
+    gap: 3px;
   }
   .sblog_product .product_by,
   .sblog_product .product_admin {
@@ -404,6 +409,9 @@
     align-content: center;
     gap: 10px;
     text-align: center;
+  }
+  .subscribe_banner {
+    height: 45%;
   }
 }
 
