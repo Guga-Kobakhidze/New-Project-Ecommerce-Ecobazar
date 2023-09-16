@@ -63,7 +63,7 @@ navbarLinks.forEach((link) => {
 
 // For Timer -->> //
 
-const targetDate = new Date("2023-09-15T00:02:18").getTime();
+const targetDate = new Date("2023-09-17T00:02:18").getTime();
 
 function updateCountdown() {
   const currentDate = new Date().getTime();
@@ -97,3 +97,5 @@ const countdown = setInterval(updateCountdown, 1000);
 function padZero(number) {
   return number < 10 ? `0${number}` : number;
 }
+
+

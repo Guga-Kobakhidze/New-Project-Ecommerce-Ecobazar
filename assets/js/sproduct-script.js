@@ -113,6 +113,17 @@ document.addEventListener("DOMContentLoaded", function () {
       imageUrl: "assets/images/Sproduct/9.webp",
       simageUrl: "assets/images/Sproduct/9.webp",
     },
+    {
+      id: "s11",
+      title: "Green Chili",
+      description: `Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                          per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et 
+                          ipsum. Nulla varius magna a consequat pulvinar.`,
+      newPrice: "$34.00",
+      oldPrice: "",
+      imageUrl: "assets/images/Sproduct/9.webp",
+      simageUrl: "assets/images/Sproduct/9.webp",
+    },
   ];
 
   // Add a click event listener to all elements with class "product-details-button"

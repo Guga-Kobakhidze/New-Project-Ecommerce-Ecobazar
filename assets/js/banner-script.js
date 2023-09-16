@@ -43,3 +43,4 @@ for (const element of EyeLineElements) {
 }
 
 closeBtn2.addEventListener("click", closeSubscribeBanner1);
+

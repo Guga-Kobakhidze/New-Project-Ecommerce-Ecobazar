@@ -23,7 +23,7 @@
     text-align: center;
   }
   .sub_content {
-    max-width: 360px;
+    max-width: 420px;
   }
   .sblog_product .scontact_forms .contact_inputs {
     flex-direction: column;
@@ -249,7 +249,8 @@
 @media screen and (max-width: 800px) {
   /* Blog Section */
   .blog_sections .merge_sections,
-  .blog_sections .sblog_merge_sections {
+  .blog_sections .sblog_merge_sections,
+  .shop_sections .merge_sections {
     grid-template-columns: 1fr;
     justify-items: center;
   }
@@ -258,7 +259,8 @@
     padding-left: 0;
   }
   .filter_section,
-  .sfilter_section {
+  .sfilter_section,
+  .shfilter_section {
     position: absolute;
     max-width: 240px;
     width: 100%;
@@ -272,7 +274,8 @@
     color: white;
   }
   .filter_section.open,
-  .sfilter_section.open {
+  .sfilter_section.open,
+  .shfilter_section.open {
     left: 0;
   }
   .filter_staff .search_form {
@@ -284,13 +287,18 @@
   }
   .close_btn,
   .close_btn2,
+  .close_btn3,
   .for_filter_mobile,
-  .for_filter_smobile {
+  .for_filter_smobile,
+  .for_filter_shmobile {
     display: block;
   }
-  .blog_section .sort_func select {
+  .blog_section .sort_func select,
+  .product_section .sort_func select {
     width: 76px;
+    gap: 8px;
   }
+
   .p_tags button.normal {
     padding: 0 20px;
   }
@@ -302,6 +310,9 @@
   }
   .news_card .details p i {
     margin-right: 2px;
+  }
+  .range_inputs input:last-child {
+    top: 0;
   }
 }
 
