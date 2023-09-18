@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/css/media-style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+    />
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="registration">
+          <div class="location">
+            <i class="ri-map-pin-line"></i>
+            <span>Store Location: Lincoln- 344, Illinois, Chicago, USA</span>
+          </div>
+          <div class="sign_up">
+            <h4 class="language">
+              Eng <span><i class="ri-arrow-down-s-line"></i></span>
+            </h4>
+            <h4 class="payment">
+              USD <span><i class="ri-arrow-down-s-line"></i></span>
+            </h4>
+            <span
+              ><a href="#" class="login">Sign in</a> /
+              <a href="#" class="signup">Sign Up</a></span
+            >
+          </div>
+        </div>
+        <div class="site_header" id="site-header">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/images/Logo.png" alt="Logo"
+            /></a>
+          </div>
+          <div class="search_bar">
+            <form action="" class="search_form">
+              <i class="ri-search-line"></i>
+              <input type="text" name="" id="" placeholder="Search" />
+              <button>Search</button>
+            </form>
+          </div>
+          <div class="shopping_cart">
+            <a href="#"><i class="ri-heart-line"></i></a>
+            <div class="shopping_box">
+              <a href="#"><i class="ri-handbag-line"></i></a>
+              <div class="shopping_desc">
+                <h5>Shopping Cart</h5>
+                <h4>$0.00</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu_section" id="main-menu">
+        <div class="container">
+          <div class="navigation_section">
+            <ul class="navigation" id="navbar">
+              <li>
+                <a href="index.html"
+                  >Home <span><i class="ri-arrow-down-s-line"></i></span
+                ></a>
+              </li>
+              <li>
+                <a class="active" href="shop.html"
+                  >Shop <span><i class="ri-arrow-down-s-line"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  >Pages <span><i class="ri-arrow-down-s-line"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="blog.html"
+                  >Blog <span><i class="ri-arrow-down-s-line"></i></span
+                ></a>
+              </li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <a id="close" href="#"><i class="ri-close-line"></i></a>
+            </ul>
+            <div class="mobile">
+              <i id="bar" class="ri-menu-2-line"></i>
+            </div>
+            <div class="contact_number">
+              <span><i class="ri-phone-line"></i> (219) 555-0114</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main Page -->
+    <main class="main" id="main">
+      <!-- Single Product Background -->
+      <section class="about_bg" id="singleProduct-bg">
+        <div class="container">
+          <div class="site-gude">
+            <a href="index.html"><i class="ri-home-4-line"></i></a>
+            <i class="ri-arrow-right-s-line"></i>
+            <span
+              ><a href="shop.html">Shop</a
+              ><i class="ri-arrow-right-s-line"></i> Product</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Single Product Description -->
+      <div class="single_product_desc">
+        <div class="single_pro_img">
+          <div class="small_img_group">
+            <div class="small_img_col">
+              <img src="" width="50%" class="small-img" alt="" />
+            </div>
+            <div class="small_img_col">
+              <img src="" width="60%" class="small-img" alt="" />
+            </div>
+            <div class="small_img_col">
+              <img src="" width="50%" class="small-img" alt="" />
+            </div>
+            <div class="small_img_col">
+              <img src="" width="50%" class="small-img" alt="" />
+            </div>
+          </div>
+          <img src="" width="100%" id="singleImage" alt="" />
+        </div>
+        <div class="desc_section">
+          <h2 class="title" id="singleTitle"></h2>
+          <div class="stars">
+            <i class="ri-star-s-fill" style="color: chocolate"></i>
+            <i class="ri-star-s-fill" style="color: chocolate"></i>
+            <i class="ri-star-s-fill" style="color: chocolate"></i>
+            <i class="ri-star-s-fill" style="color: chocolate"></i>
+            <i class="ri-star-s-fill" style="color: chocolate"></i>
+            <p class="paragraph">4 Review •</p>
+            <h3>
+              SKU
+              <p class="paragraph">2,51,594</p>
+            </h3>
+          </div>
+          <div class="desc_price">
+            <h4>64% OFF</h4>
+            <div class="new_old">
+              <h3 id="singleNPrice"></h3>
+              <h3 id="singleOPrice"></h3>
+            </div>
+          </div>
+          <div class="social_icons">
+            <div class="brand">
+              <h4>Brand:</h4>
+              <img src="assets/images/Sproduct/brand.png" alt="" />
+            </div>
+            <div class="icons">
+              <h4>Share item:</h4>
+              <i class="ri-facebook-line"></i>
+              <i class="ri-twitter-fill"></i>
+              <i class="ri-pinterest-fill"></i>
+              <i class="ri-instagram-line"></i>
+            </div>
+          </div>
+          <p class="paragraph" id="singleDescription"></p>
+          <div class="add_to_cart">
+            <div class="plus_minus">
+              <input type="button" value="-" />
+              <input type="text" value="1" />
+              <input type="button" value="+" />
+            </div>
+            <button class="normal">
+              Add to Cart <i class="ri-shopping-bag-line"></i>
+            </button>
+            <i class="ri-heart-line"></i>
+          </div>
+          <h4 class="cat_tag">
+            Category:
+            <p class="paragraph">Vegetables</p>
+          </h4>
+          <h4 class="cat_tag">
+            Tag:
+            <p class="paragraph">
+              Vegetables Healthy<a href="#"> Chinese</a> Cabbage Green Cabbage
+            </p>
+          </h4>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footer_forms">
+        <div class="container">
+          <div class="footer_forms-content">
+            <div class="footer_title_section">
+              <h2 class="title">Subcribe our Newsletter</h2>
+              <p class="paragraph">
+                Pellentesque eu nibh eget mauris congue mattis mattis nec <br />
+                tellus. Phasellus imperdiet elit eu magna.
+              </p>
+            </div>
+            <div class="sub_content">
+              <form action="">
+                <div class="sub_input">
+                  <input
+                    class="sub_email"
+                    type="email"
+                    placeholder="Your email address"
+                  />
+                  <button class="normal2">Subscribe</button>
+                </div>
+              </form>
+              <div class="social_icons">
+                <i class="ri-facebook-line"></i>
+                <i class="ri-twitter-fill"></i>
+                <i class="ri-pinterest-fill"></i>
+                <i class="ri-instagram-line"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_terms">
+        <div class="container">
+          <div class="footer_menu">
+            <div class="footer_logo">
+              <img src="assets/images/Logofooter.png" alt="" />
+              <p class="paragraph">
+                Morbi cursus porttitor enim lobortis molestie. <br />Duis
+                gravida turpis dui, eget bibendum magna <br />congue nec.
+              </p>
+              <p class="paragraph">
+                <a href="#" class="p-number">(219) 555-0114</a> or
+                <a class="E-mail" href="#">Proxy@gmail.com</a>
+              </p>
+            </div>
+            <div class="footer_nav">
+              <h4 class="nav_title">My Account</h4>
+              <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Shopping Cart</a></li>
+                <li><a href="#">Wishlist</a></li>
+              </ul>
+            </div>
+            <div class="footer_nav">
+              <h4 class="nav_title">Helps</h4>
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQS</a></li>
+                <li><a href="#">Terms % Condition</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer_nav">
+              <h4 class="nav_title">Proxy</h4>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Track Order</a></li>
+              </ul>
+            </div>
+            <div class="footer_nav">
+              <h4 class="nav_title">Categories</h4>
+              <ul>
+                <li><a href="#">Fruit & Vagetables</a></li>
+                <li><a href="#">Meat & Fish</a></li>
+                <li><a href="#">Bread & Bakery</a></li>
+                <li><a href="#">Beauty & Health</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">
+            <h5>Ecobazar eCommerce © 2021. All Rights Reserved</h5>
+            <img src="assets/images/cart.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript Codes -->
+    <script src="assets/js/single-script.js"></script>
+    <script>
+      var MainImg = document.getElementById("singleImage");
+      var smallimg = document.getElementsByClassName("small-img");
+
+      smallimg[0].onclick = function () {
+        MainImg.src = smallimg[0].src;
+      };
+      smallimg[1].onclick = function () {
+        MainImg.src = smallimg[1].src;
+      };
+      smallimg[2].onclick = function () {
+        MainImg.src = smallimg[2].src;
+      };
+      smallimg[3].onclick = function () {
+        MainImg.src = smallimg[3].src;
+      };
+    </script>
+  </body>
+</html>

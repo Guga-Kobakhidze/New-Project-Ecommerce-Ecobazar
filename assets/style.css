@@ -2207,22 +2207,40 @@ button.normal2:hover {
 }
 
 .product_desc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
   display: none;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 24px;
 }
 
-.image_section {
+.image_section,
+.simage_section {
   width: 45%;
 }
 
 .BigImg {
-  width: 80%;
+  width: 100%;
 }
 
-.small_image {
+.simage_section {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.small_img_group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.small_img_col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+/* .small_image {
   display: flex;
   flex-direction: column;
 }
@@ -2236,9 +2254,10 @@ button.normal2:hover {
 
 .small_image img:hover {
   border: 1px solid var(--color-button);
-}
+} */
 
-.desc_section {
+.desc_section,
+.sdesc_section {
   position: relative;
   max-width: 568px;
   width: 100%;
@@ -2439,7 +2458,7 @@ button.normal2:hover {
   content: "";
   position: absolute;
   top: 1.7px;
-  left: 1.85px;
+  left: 1.8px;
   width: 13px;
   height: 13px;
   background-color: var(--color-button);
@@ -2656,14 +2675,14 @@ button.normal2:hover {
 }
 
 .S-products .discount h2 span {
-  color: #FF8A00;
+  color: #ff8a00;
   font-size: 32px;
   font-weight: var(--bold-weight);
 }
 
 .S-products .discount .paragraph {
   font-size: 16px;
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-weight: var(--small-weight);
   margin-bottom: 12px;
 }
@@ -2673,4 +2692,43 @@ button.normal2:hover {
   padding: 0;
   font-size: 16px;
   font-weight: var(--bold-weight);
+}
+
+/* Single Page */
+
+.single_product_desc {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  gap: 50px;
+}
+
+.single_product_desc .single_pro_img {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+}
+
+.small_img_group {
+  display: flex;
+  width: 30%;
+}
+
+.small_img_col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5px 0;
+  margin-bottom: 5px;
+  border: 2px solid transparent;
+}
+
+.small_img_col:hover {
+  border: 2px solid var(--color-button);
+}
+
+.single_product_desc .desc_section {
+  width: 50%;
 }

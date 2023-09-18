@@ -115,7 +115,29 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       id: "s11",
-      title: "Green Chili",
+      title: "Red Capsicum",
+      description: `Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                          per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et 
+                          ipsum. Nulla varius magna a consequat pulvinar.`,
+      newPrice: "$12.00",
+      oldPrice: "",
+      imageUrl: "assets/images/Sproduct/10.jpg",
+      simageUrl: "assets/images/Sproduct/10.jpg",
+    },
+    {
+      id: "s12",
+      title: "Red Tomato",
+      description: `Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                          per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et 
+                          ipsum. Nulla varius magna a consequat pulvinar.`,
+      newPrice: "$9.00",
+      oldPrice: "20.99",
+      imageUrl: "assets/images/Sproduct/11.png",
+      simageUrl: "assets/images/Sproduct/11.png",
+    },
+    {
+      id: "s13",
+      title: "Surjapur Mango",
       description: `Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
                           per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et 
                           ipsum. Nulla varius magna a consequat pulvinar.`,
@@ -123,6 +145,28 @@ document.addEventListener("DOMContentLoaded", function () {
       oldPrice: "",
       imageUrl: "assets/images/Sproduct/9.webp",
       simageUrl: "assets/images/Sproduct/9.webp",
+    },
+    {
+      id: "s14",
+      title: "Green Cucamber",
+      description: `Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                          per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et 
+                          ipsum. Nulla varius magna a consequat pulvinar.`,
+      newPrice: "$14.99",
+      oldPrice: "20.99",
+      imageUrl: "assets/images/Sproduct/13.jpg",
+      simageUrl: "assets/images/Sproduct/13.jpg",
+    },
+    {
+      id: "s15",
+      title: "Red Chilli",
+      description: `Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                          per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et 
+                          ipsum. Nulla varius magna a consequat pulvinar.`,
+      newPrice: "$34.00",
+      oldPrice: "",
+      imageUrl: "assets/images/Sproduct/14.jpg",
+      simageUrl: "assets/images/Sproduct/14.jpg",
     },
   ];
 
