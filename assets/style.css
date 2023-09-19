@@ -1450,13 +1450,20 @@ button.normal2:hover {
 
 /* About Us */
 
-.about_us_section .about_content {
+.about_us_section .about_content,
+.descriptions_side .about_content {
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 58px;
   margin-bottom: 80px;
+}
+
+.descriptions_side .about_content {
+  align-items: start;
+  margin-top: 32px;
+  padding-top: 32px;
 }
 
 .about_us_section .about_content:last-child {
@@ -1477,7 +1484,8 @@ button.normal2:hover {
   width: 100%;
 }
 
-.about_us_section .about_content .desc_content {
+.about_us_section .about_content .desc_content,
+.descriptions_side .about_content .desc_content {
   max-width: 590px;
   width: 100%;
 }
@@ -2741,4 +2749,75 @@ button.normal2:hover {
 
 .single_product_desc .desc_section {
   width: 50%;
+}
+
+.descriptions_side.carousel_desc .about_content {
+  padding-top: 32px;
+}
+
+.descriptions_side .image_content .disc_items {
+  margin-top: 20px;
+  padding: 24px 20px;
+  border-radius: 6px;
+  border: 1px solid var(--gray-scale-gray-100, #e6e6e6);
+}
+
+.descriptions_side .image_content .disc_items .disc,
+.descriptions_side .image_content .disc_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.descriptions_side .image_content .disc_items .disc .disc_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.descriptions_side .image_content .disc_items .disc .disc_desc h3 {
+  font-size: 14px;
+  font-weight: var(--medium-weight);
+}
+
+.descriptions_side .image_content .disc_items img {
+  width: 37px;
+  height: 37px;
+}
+
+.carousel_section .carouse_buttons {
+  padding: 16px 0;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+  border-top: 1px solid rgba(128, 128, 128, 0.295);
+}
+
+.carousel_section .carouse_buttons a {
+  position: relative;
+  color: #808080;
+  font-size: 16px;
+  font-weight: var(--medium-weight);
+}
+
+.carousel_section .carouse_buttons a:hover,
+.carousel_section .carouse_buttons a:focus {
+  color: var(--color-dark);
+  transition: all 0.2s ease;
+}
+
+.carousel_section .carouse_buttons a:hover::before,
+.carousel_section .carouse_buttons a:focus::before {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-button);
 }
