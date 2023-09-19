@@ -2703,16 +2703,26 @@ button.normal2:hover {
   gap: 50px;
 }
 
+#singleImage {
+  width: 500px;
+  height: 500px;
+}
+
+.single_pro_img .small-img {
+  width: 90px;
+  height: 90px;
+}
+
 .single_product_desc .single_pro_img {
   display: flex;
   justify-content: start;
   align-items: center;
-  width: 50%;
+  width: 45%;
 }
 
 .small_img_group {
   display: flex;
-  width: 30%;
+  width: 25%;
 }
 
 .small_img_col {
