@@ -173,6 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (product) {
     const singleTitle = document.getElementById("singleTitle");
+    const singleTitle2 = document.getElementById("singleTitle2");
     const singleDescription = document.getElementById("singleDescription");
     const singleImage = document.getElementById("singleImage");
     const singleNPrice = document.getElementById("singleNPrice");
@@ -187,6 +188,45 @@ document.addEventListener("DOMContentLoaded", function () {
     singleOPrice.textContent = product.oldPrice;
     singleImage.src = product.imageUrl;
     singleTitle.textContent = product.title;
+    singleTitle2.textContent = product.title;
     singleDescription.textContent = product.description;
   }
+});
+
+$(document).ready(function () {
+  $(".about_content2, .about_content3").hide(); // Hide all containers except the first one
+
+  $(".description-link").click(function (e) {
+    e.preventDefault();
+    $(".about_content").show();
+    $(".about_content2, .about_content3").hide();
+  });
+
+  $(".additional-info-link").click(function (e) {
+    e.preventDefault();
+    $(".about_content").hide();
+    $(".about_content2").show();
+    $(".about_content3").hide();
+  });
+
+  $(".customer_feedback").click(function (e) {
+    e.preventDefault();
+    $(".about_content").hide();
+    $(".about_content2").hide();
+    $(".about_content3").show();
+  });
+});
+
+$(document).ready(function () {
+  $(".description-link, .additional-info-link, .customer_feedback").click(
+    function (e) {
+      e.preventDefault();
+
+      $(
+        ".description-link, .additional-info-link, .customer_feedback"
+      ).removeClass("active");
+
+      $(this).addClass("active");
+    }
+  );
 });

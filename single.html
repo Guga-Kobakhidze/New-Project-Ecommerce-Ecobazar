@@ -101,9 +101,11 @@
         </div>
       </div>
     </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- main Page -->
     <main class="main" id="main">
+      <div class="overlay" id="overlay"></div>
       <!-- Single Product Background -->
       <section class="about_bg" id="singleProduct-bg">
         <div class="container">
@@ -196,11 +198,12 @@
         </div>
       </div>
 
+      <!-- Carousel Description -->
       <section class="carousel_section">
         <div class="carouse_buttons">
-          <a href="#">Descriptions</a>
-          <a href="#">Additiona Information</a>
-          <a href="#">Customer Feedback</a>
+          <a href="#" class="description-link active">Descriptions</a>
+          <a href="#" class="additional-info-link">Additional Information</a>
+          <a href="#" class="customer_feedback">Customer Feedback</a>
         </div>
         <div class="container">
           <div class="descriptions_side carousel_desc">
@@ -265,9 +268,326 @@
                 </div>
               </div>
             </div>
+            <div class="about_content2">
+              <div class="desc_content">
+                <div class="names">
+                  <h4>Weight:</h4>
+                  <h4>Color:</h4>
+                  <h4>Type:</h4>
+                  <h4>Category:</h4>
+                  <h4>Stock Status:</h4>
+                  <h4>Tags:</h4>
+                </div>
+                <div class="values">
+                  <p class="paragraph">03</p>
+                  <p class="paragraph">Green</p>
+                  <p class="paragraph">Organic</p>
+                  <p class="paragraph">Vegetables</p>
+                  <p class="paragraph">Available (5,413)</p>
+                  <p class="paragraph">
+                    Vegetables, Healthy, <a href="#"> Chinese,</a> Cabbage,
+                    Green Cabbage,
+                  </p>
+                </div>
+              </div>
+              <div class="image_content">
+                <img src="assets/images/simage.png" alt="about" />
+                <div class="disc_items">
+                  <div class="disc">
+                    <img src="assets/images/disc1.png" alt="" />
+                    <div class="disc_desc">
+                      <h3>64% Discount</h3>
+                      <p class="paragraph">Save your 64% money with us</p>
+                    </div>
+                  </div>
+                  <div class="disc">
+                    <img src="assets/images/disc2.png" alt="" />
+                    <div class="disc_desc">
+                      <h3>100% Organic</h3>
+                      <p class="paragraph">100% Organic Vegetables</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about_content3">
+              <div class="user_comment">
+                <img src="assets/images/Sblog/User2.png" alt="" />
+                <div class="comment">
+                  <h4>Kristin Watson • <span>24 Apr, 2021</span></h4>
+                  <p class="paragraph">
+                    Quisque eget tortor lobortis, facilisis metus eu, elementum
+                    est. Nunc sit amet erat quis ex convallis suscipit. Nam
+                    hendrerit, velit ut aliquam euismod, nibh tortor rutrum
+                    nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est
+                    eget aliquam venenatis, est sem tempor eros.
+                  </p>
+                </div>
+              </div>
+              <div class="user_comment">
+                <img src="assets/images/Sblog/User3.png" alt="" />
+                <div class="comment">
+                  <h4>Jacob Jones • <span>20 Apr, 2021</span></h4>
+                  <p class="paragraph">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices posuere cubilia curae.
+                  </p>
+                </div>
+              </div>
+              <div class="user_comment">
+                <img src="assets/images/Sblog/User4.png" alt="" />
+                <div class="comment">
+                  <h4>Jane Cooper • <span>18 Apr, 2021</span></h4>
+                  <p class="paragraph">
+                    Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh
+                    bibendum elit, a volutpat arcu dui nec orci. Aenean dui
+                    odio, ullamcorper quis turpis ac, volutpat imperdiet ex.
+                  </p>
+                </div>
+              </div>
+              <div class="user_comment">
+                <img src="assets/images/Sblog/User5.png" alt="" />
+                <div class="comment">
+                  <h4>Darrell Steward • <span>7 Apr, 2021</span></h4>
+                  <p class="paragraph">Nulla molestie interdum ultricies.</p>
+                </div>
+              </div>
+              <button class="normal">Load More</button>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- Related Products -->
+      <section class="product_section mb-large" id="related_products">
+        <div class="container">
+          <div class="rel_products">
+            <div class="popular_cards">
+              <div class="po_card has_sale">
+                <img
+                  src="assets/images/Popular2/0.png"
+                  alt=""
+                  class="po_img"
+                  onclick="window.location.href='single.html?productID=single-1';"
+                />
+                <div class="po_card_content">
+                  <h5
+                    onclick="window.location.href='single.html?productID=single-1';"
+                  >
+                    Green Apple
+                  </h5>
+                  <div class="add_to_cart">
+                    <div class="po_card_price">
+                      <h6>$14.99</h6>
+                      <h6><del>$20.99</del></h6>
+                    </div>
+                    <i class="ri-shopping-bag-line"></i>
+                  </div>
+                  <div class="stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                </div>
+                <span class="po_sale">Sale 50%</span>
+                <div class="po_shopping">
+                  <i class="ri-heart-line"></i>
+                  <i
+                    class="ri-eye-line product-details-button Eye-Line"
+                    data-product-id="s1"
+                  ></i>
+                </div>
+              </div>
+              <div class="po_card">
+                <img
+                  src="assets/images/Popular2/1.png"
+                  alt=""
+                  class="po_img"
+                  onclick="window.location.href='single.html?productID=single-2';"
+                />
+                <div class="po_card_content">
+                  <h5
+                    onclick="window.location.href='single.html?productID=single-2';"
+                  >
+                    Fresh Indian Malta
+                  </h5>
+                  <div class="add_to_cart">
+                    <div class="po_card_price">
+                      <h6>$20.00</h6>
+                      <h6><del></del></h6>
+                    </div>
+                    <i class="ri-shopping-bag-line"></i>
+                  </div>
+                  <div class="stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                </div>
+                <div class="po_shopping">
+                  <i class="ri-heart-line"></i>
+                  <i
+                    class="ri-eye-line product-details-button Eye-Line"
+                    data-product-id="s2"
+                  ></i>
+                </div>
+              </div>
+              <div class="po_card out_of_stock">
+                <img
+                  src="assets/images/Popular2/2.png"
+                  alt=""
+                  class="po_img"
+                  onclick="window.location.href='single.html?productID=single-3';"
+                />
+                <div class="po_card_content">
+                  <h5
+                    onclick="window.location.href='single.html?productID=single-3';"
+                  >
+                    Chinese cabbage
+                  </h5>
+                  <div class="add_to_cart">
+                    <div class="po_card_price">
+                      <h6>$12.00</h6>
+                      <h6><del></del></h6>
+                    </div>
+                    <i class="ri-shopping-bag-line"></i>
+                  </div>
+                  <div class="stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                </div>
+                <span class="po_sale">Out Of Stock</span>
+                <div class="po_shopping">
+                  <i class="ri-heart-line"></i>
+                  <i
+                    class="ri-eye-line product-details-button Eye-Line"
+                    data-product-id="s3"
+                  ></i>
+                </div>
+              </div>
+              <div class="po_card">
+                <img
+                  src="assets/images/Popular2/3.png"
+                  alt=""
+                  class="po_img"
+                  onclick="window.location.href='single.html?productID=single-4';"
+                />
+                <div class="po_card_content">
+                  <h5
+                    onclick="window.location.href='single.html?productID=single-4';"
+                  >
+                    Green Lettuce
+                  </h5>
+                  <div class="add_to_cart">
+                    <div class="po_card_price">
+                      <h6>$9.00</h6>
+                      <h6><del></del></h6>
+                    </div>
+                    <i class="ri-shopping-bag-line"></i>
+                  </div>
+                  <div class="stars">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                </div>
+                <div class="po_shopping">
+                  <i class="ri-heart-line"></i>
+                  <i
+                    class="ri-eye-line product-details-button Eye-Line"
+                    data-product-id="s4"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Single Product Description -->
+      <div class="product_desc" id="Pro_de">
+        <div class="image_section">
+          <div class="big_image">
+            <img id="S-pro" class="BigImg" src="" alt="" />
+          </div>
+        </div>
+        <div class="desc_section">
+          <i id="Prod_close" class="ri-close-line"></i>
+          <h2 class="title" id="sproductTitle"></h2>
+          <div class="stars">
+            <i class="ri-star-s-fill" style="color: chocolate"></i>
+            <i class="ri-star-s-fill" style="color: chocolate"></i>
+            <i class="ri-star-s-fill" style="color: chocolate"></i>
+            <i class="ri-star-s-fill" style="color: chocolate"></i>
+            <i class="ri-star-s-fill" style="color: chocolate"></i>
+            <p class="paragraph">4 Review •</p>
+            <h3>
+              SKU
+              <p class="paragraph">2,51,594</p>
+            </h3>
+          </div>
+          <div class="desc_price">
+            <h4>64% OFF</h4>
+            <div class="new_old">
+              <h3 id="oldPrice"></h3>
+              <h3 id="newPrice"></h3>
+            </div>
+            <img
+              src=""
+              width="130px"
+              height="100px"
+              alt=""
+              class="media_img"
+              id="Ss-pro"
+            />
+          </div>
+          <div class="social_icons">
+            <div class="brand">
+              <h4>Brand:</h4>
+              <img src="assets/images/Sproduct/brand.png" alt="" />
+            </div>
+            <div class="icons">
+              <h4>Share item:</h4>
+              <i class="ri-facebook-line"></i>
+              <i class="ri-twitter-fill"></i>
+              <i class="ri-pinterest-fill"></i>
+              <i class="ri-instagram-line"></i>
+            </div>
+          </div>
+          <p class="paragraph" id="sProductDescr"></p>
+          <div class="add_to_cart">
+            <div class="plus_minus">
+              <input type="button" value="-" />
+              <input type="text" value="1" />
+              <input type="button" value="+" />
+            </div>
+            <button class="normal">
+              Add to Cart <i class="ri-shopping-bag-line"></i>
+            </button>
+            <i class="ri-heart-line"></i>
+          </div>
+          <h4 class="cat_tag">
+            Category:
+            <p class="paragraph">Vegetables</p>
+          </h4>
+          <h4 class="cat_tag">
+            Tag:
+            <p class="paragraph">
+              Vegetables Healthy<a href="#"> Chinese</a> Cabbage Green Cabbage
+            </p>
+          </h4>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -364,6 +684,8 @@
 
     <!-- JavaScript Codes -->
     <script src="assets/js/single-script.js"></script>
+    <script src="assets/js/banner-script.js"></script>
+    <script src="assets/js/sproduct-script.js"></script>
     <script>
       var MainImg = document.getElementById("singleImage");
       var smallimg = document.getElementsByClassName("small-img");

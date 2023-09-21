@@ -1451,7 +1451,9 @@ button.normal2:hover {
 /* About Us */
 
 .about_us_section .about_content,
-.descriptions_side .about_content {
+.descriptions_side .about_content,
+.descriptions_side .about_content2,
+.descriptions_side .about_content3 {
   width: auto;
   display: flex;
   justify-content: center;
@@ -1460,7 +1462,16 @@ button.normal2:hover {
   margin-bottom: 80px;
 }
 
-.descriptions_side .about_content {
+.descriptions_side .about_content3 {
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+}
+
+.descriptions_side .about_content,
+.descriptions_side .about_content2,
+.descriptions_side .about_content3 {
   align-items: start;
   margin-top: 32px;
   padding-top: 32px;
@@ -1480,12 +1491,15 @@ button.normal2:hover {
   margin-bottom: 32px;
 }
 
-.about_content .image_content img {
+.about_content .image_content img,
+.about_content2 .image_content img {
   width: 100%;
 }
 
 .about_us_section .about_content .desc_content,
-.descriptions_side .about_content .desc_content {
+.descriptions_side .about_content .desc_content,
+.descriptions_side .about_content2 .desc_content,
+.descriptions_side .about_content3 {
   max-width: 590px;
   width: 100%;
 }
@@ -2806,13 +2820,15 @@ button.normal2:hover {
 }
 
 .carousel_section .carouse_buttons a:hover,
-.carousel_section .carouse_buttons a:focus {
+.carousel_section .carouse_buttons a:focus,
+.carousel_section .carouse_buttons a.active {
   color: var(--color-dark);
   transition: all 0.2s ease;
 }
 
 .carousel_section .carouse_buttons a:hover::before,
-.carousel_section .carouse_buttons a:focus::before {
+.carousel_section .carouse_buttons a:focus::before,
+.carousel_section .carouse_buttons a.active::before {
   content: "";
   position: absolute;
   bottom: -16px;
@@ -2820,4 +2836,35 @@ button.normal2:hover {
   width: 100%;
   height: 2px;
   background-color: var(--color-button);
+}
+
+.descriptions_side .about_content2 .desc_content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.descriptions_side .about_content2 .desc_content .names h4,
+.descriptions_side .about_content2 .desc_content .values p {
+  font-size: 14px;
+  font-weight: var(--medium-weight);
+  margin-bottom: 10px;
+}
+
+.descriptions_side .about_content2 .desc_content .values p a {
+  color: black;
+  text-decoration: underline;
+}
+
+.descriptions_side .about_content3 button.normal {
+  background: rgba(86, 172, 89, 0.1);
+}
+
+.descriptions_side .about_content3 button.normal:hover {
+  background: var(--color-button);
+  color: var(--color-dark);
+}
+
+.descriptions_side .about_content3 .user_comment {
+  width: 100%;
 }
